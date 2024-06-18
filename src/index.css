@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@400;500;700&family=Public+Sans:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+}
+
+img {
+  width: 30px;
+}
+
+.todo {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 135px auto;
+  padding: 28px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.28) 3px 3px 3px 3px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  color: black;
+  font-size: 25px;
+}
+
+.task-input {
+  width: 100%;
+  height: 52px;
+  position: relative;
+}
+
+input {
+  padding: 0;
+  width: 32px;
+  height: 20px;
+}
+
+.task-input input {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px 0 53px;
+  font-size: 19px;
+  border-radius: 6px;
+  border: none;
+}
+
+input::placeholder {
+  font-weight: 300;
+}
+
+.task-input input::placeholder {
+  color: #b9b9b9;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.task-input .bars {
+  position: absolute;
+  top: 50%;
+  transform: translate(17px, -50%);
+}
+
+.task-input .enter {
+  position: absolute;
+  top: 50%;
+  transform: translate(-35px, -50%);
+  width: 25px;
+}
+
+.activity {
+  border: 5px solid green;
+  padding: 2%;
+  width: 100%;
+}
+
+.enter .recycle {
+  color: #c3c3c3;
+  font-size: 30px;
+}
+
+.list-item {
+  border: 8px solid #EEF1EE;
+  background-color: #BDC8BC;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 15fr 1fr;
+  padding: 2%;
+  cursor: move;
+  row-gap: 0;
+  align-items: center;
+}
+
+.list-item:last-child {
+  border-bottom: #b9b9b9;
+}
+
+.todo-list {
+  width: 100%;
+}
+
+.fa-ellipsis-v {
+  color: #c3c3c3;
+  margin-left: 50%;
+  font-size: 30px;
+}
+
+.btn {
+  background-color: #c3c3c3;
+}
+
+.bg-color {
+  background-color: #f6f6f6;
+  width: 100%;
+  color: #b1b1b1;
+  padding: 2%;
+}
+
+.fa-trash-alt {
+  color: rgb(154, 29, 7);
+}
+
+.todo-list.sorted {
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.603);
+}
